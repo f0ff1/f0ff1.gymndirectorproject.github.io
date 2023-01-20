@@ -1,0 +1,374 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+/* Указываем box sizing */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+body {
+    font-family: 'Gilroy-Medium';
+    min-width: 540px;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #070707;
+}
+
+.container {
+    width: 950px;
+    margin: 0 auto;
+    padding: 0 5px;
+    text-align: center;
+}
+
+
+/*-----------------------------------------------------------*/
+
+.header-nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-nav-list-item a {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    color: #828282;
+}
+
+.header-nav-list-item a:hover {
+    color: #070707;
+}
+
+.header-navigation {
+    border-bottom: 2px solid rgba(130, 130, 130, 0.5);
+    padding-bottom: 32px;
+    padding-top: 33px;
+    margin-bottom: 39px;
+
+}
+
+.header-main-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31px;
+}
+
+.left-side-header {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-name-div {
+    width: 124px;
+}
+
+.heading-two {
+    font-family: 'Gilroy-Bold';
+    font-size: 34px;
+    line-height: 42px;
+    color: #070707;
+}
+
+.my-name {
+    font-family: 'Gilroy-Bold';
+    font-size: 47px;
+    color: #070707;
+    line-height: 59px;
+}
+
+.small-info {
+    color: #070707;
+    text-align: left;
+}
+
+.small-info p {
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.main-information {
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 107px;
+    margin-top: 104px;
+    background-color: #f6f6f6;
+}
+
+.information-description-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.photo-picture-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information-item {
+    margin-top: 37px;
+}
+
+.information-item:first-child {
+    margin-top: 27px;
+}
+
+.ab-first-item {
+
+    width: 535px;
+}
+
+.ab-second-item {
+
+    width: 450px;
+}
+
+.ab-third-item {
+
+    width: 350px;
+}
+
+
+.contacts {
+    padding: 114px 0 123px 0;
+}
+
+
+.footer-text {
+    margin-bottom: 30px;
+}
+
+.footer-items {
+    width: 342px;
+    margin: 0 auto;
+}
+
+
+
+.link-me {
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    margin-top: 46px;
+}
+
+.footer-items h2 {
+    margin-bottom: 20px;
+}
+
+.contacts-links {
+    moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
+
+.link-button {
+    display: inline-block;
+    margin-bottom: 86px;
+    background-color: #070707;
+    color: #fff;
+    border-radius: 30px;
+    padding: 12px 30px 12px 30px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+
+}
+
+.contacts-link-item a:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #070707;
+}
+
+
+.contact-link-icon-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #070707;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px;
+    padding: 0 22px 0 0;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.contact-link-icon-btn span {
+    margin-left: 10px;
+}
+
+.contact-link-icon-btn svg {
+    fill: #fff;
+}
+
+.contact-link-icon-btn:hover svg {
+    fill: #070707;
+}
+
+
+
+@media (max-width: 950px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .ab-first-item {
+        width: 50%;
+    }
+
+    .ab-second-item {
+        width: 50%;
+    }
+
+    .ab-third-item {
+        width: 50%;
+    }
+
+    .header-nav-list {
+        justify-content: space-around;
+    }
+
+}
+
+
+@media (max-width: 800px) {
+    .header-main-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .small-info {
+        margin-top: 23px;
+    }
+
+    .ab-first-item {
+        width: 80%;
+    }
+
+    .ab-second-item {
+        width: 80%;
+    }
+
+    .ab-third-item {
+        width: 80%;
+    }
+}
